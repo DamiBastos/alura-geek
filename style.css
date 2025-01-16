@@ -1,0 +1,147 @@
+/* Importar las tipografías desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+body, html{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+}
+
+header {
+  background-color: #434343;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  padding: 4px;
+}
+
+footer {
+  background-color: #434343;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por defecto */
+    gap: 16px; /* Espacio entre las tarjetas */
+    padding: 16px; /* Espaciado interno */
+    border: solid #9e9e9e;
+    border-radius: 8px;
+  }
+  
+  .card {
+    background-color: #c1c0c0;
+    border: 2px solid #434343;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .card h2 {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    text-align: center;
+    margin: 0;
+    margin-top: 8px;
+    font-size: 1rem;
+    padding: 0 0 8px 0;
+    color: #303030;
+  }
+
+  .card span {
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .card .product-precio-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .delete-btn{
+    background-color: transparent;
+    color: #000000;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  form {
+    border: 1px solid #434343;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  form input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #434343;
+  }
+
+  .contenedor-form-botones{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contenedor-form-botones button {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #434343;
+    cursor: pointer;
+    width: 40%;
+  }
+  
+  @media (min-width: 768px) {
+    main section{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .contenedor-formulario{
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+    }
+
+    form{
+      display: flex;
+      gap: 30px;
+    }
+
+    .cards-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas anchas */
+    }
+  }
+  
